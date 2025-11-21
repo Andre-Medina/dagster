@@ -196,5 +196,5 @@ exponent.txt
 
 .workstack
 
-examples/*/src/.tmp_dagster_home/
-examples/*/src/data/
+examples*/*/src/.tmp_dagster_home/
+examples*/*/src/data/

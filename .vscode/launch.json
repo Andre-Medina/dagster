@@ -2,7 +2,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Dagster",
+            "name": "Python: Dagster (basic_example)",
+            "type": "python",
+            "request": "launch",
+            "module": "dagster",
+            "args": [
+                "dev",
+                "-m",
+                "basic_example.definitions"
+            ],
+            "cwd": "${workspaceFolder}/examples_/basic_example/src",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true,
+            "env": {
+                "DAGSTER_HOME": "${workspaceFolder}/examples_/basic_example/src/.tmp_dagster_home"
+            }
+        },
+        {
+            "name": "Python: Dagster (quickstart_etl) example",
             "type": "python",
             "request": "launch",
             "module": "dagster",
@@ -19,23 +37,5 @@
                 "DAGSTER_HOME": "${workspaceFolder}/examples/quickstart_etl/src/.tmp_dagster_home"
             }
         },
-        {
-            "name": "Python: Dagster (basic_example)",
-            "type": "python",
-            "request": "launch",
-            "module": "dagster",
-            "args": [
-                "dev",
-                "-m",
-                "basic_example.definitions"
-            ],
-            "cwd": "${workspaceFolder}/examples/basic_example/src",
-            "console": "integratedTerminal",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": true,
-            "env": {
-                "DAGSTER_HOME": "${workspaceFolder}/examples/basic_example/src/.tmp_dagster_home"
-            }
-        }
     ]
 }
