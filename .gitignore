@@ -195,3 +195,6 @@ exponent.txt
 .claude/.local
 
 .workstack
+
+examples/quickstart_etl/src/.tmp_dagster_home_uotri_ca
+examples/quickstart_etl/src/data
