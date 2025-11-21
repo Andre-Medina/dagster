@@ -196,5 +196,6 @@ exponent.txt
 
 .workstack
 
-examples/quickstart_etl/src/.tmp_dagster_home_uotri_ca
+examples/quickstart_etl/src/.tmp_dagster_home_*
 examples/quickstart_etl/src/data
+examples/basic_example/src/.tmp_dagster_home_*/
