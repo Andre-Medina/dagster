@@ -20,6 +20,24 @@
             }
         },
         {
+            "name": "Python: Dagster (massive_backfill)",
+            "type": "python",
+            "request": "launch",
+            "module": "dagster",
+            "args": [
+                "dev",
+                "-m",
+                "massive_backfill.definitions"
+            ],
+            "cwd": "${workspaceFolder}/examples_/massive_backfill/src",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true,
+            "env": {
+                "DAGSTER_HOME": "${workspaceFolder}/examples_/massive_backfill/src/.tmp_dagster_home"
+            }
+        },
+        {
             "name": "Python: Dagster (quickstart_etl) example",
             "type": "python",
             "request": "launch",

@@ -1,0 +1,28 @@
+[project]
+name = "basic_example"
+requires-python = ">=3.10,<3.14"
+version = "0.1.0"
+dependencies = [
+    "dagster",
+]
+
+[dependency-groups]
+dev = [
+    "dagster-dg-cli>=1.11.11",
+    "dagster-webserver",
+    "pytest",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.dagster]
+module_name = "basic_example.definitions"
+code_location_name = "basic_example"
+
+[tool.dg]
+directory_type = "project"
+
+[tool.dg.project]
+root_module = "basic_example"
